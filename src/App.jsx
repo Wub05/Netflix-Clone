@@ -1,7 +1,12 @@
 import React from "react";
-
+import "./App.css";
+import Home from "./pages/Home/Home";
 const App = () => {
-  return <div>Netflix Clone!</div>;
+  return (
+    <div>
+      <Home />
+    </div>
+  );
 };
 
 export default App;
