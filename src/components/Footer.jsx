@@ -5,7 +5,7 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 
 const Footer = () => {
   return (
-    <div className=" text-white leading-[2.2rem] text-sm font-light">
+    <div className=" text-white leading-[2.2rem] text-sm font-light py-2">
       <div className="flex justify-center items-center gap-30">
         <div>
           <div className="flex justify-between items-center">
@@ -44,7 +44,7 @@ const Footer = () => {
       <div className="ml-[18%] bg-primary">
         <div>
           <div>
-            <p>Service Code</p>
+            <p className="border-1 inline-block px-1">Service Code</p>
           </div>
           <div>&copy; 1997-2025 Netflix, Inc.</div>
         </div>

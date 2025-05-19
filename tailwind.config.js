@@ -8,6 +8,10 @@ export default {
       colors: {
         primary: "red",
       },
+      backgroundImage: {
+        fadeOut:
+          "linear-gradient(180deg, transparent, rgba(37,37,37,0.91), #111)",
+      },
     },
   },
   plugins: [],
