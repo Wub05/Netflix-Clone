@@ -1,1 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+@layer base {
+  body {
+    background-color: #111;
+  }
+}
+@layer components {
+  /* button or card class goes here! */
+}
+
+@layer utilities {
+  /* Hide scrollbar */
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none; /* IE/Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  .row_posters {
+    @apply flex overflow-x-auto overflow-y-hidden p-5 max-h-full;
+  }
+  .row_poster {
+    @apply w-full max-h-28 object-contain transition-transform duration-[450ms] hover:scale-1.08 mr-2.5 cursor-pointer;
+  }
+  .row_posterLarge {
+    @apply max-h-60 transform hover:scale-1.09 rounded-sm cursor-pointer;
+  }
+}

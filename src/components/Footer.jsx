@@ -5,8 +5,8 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 
 const Footer = () => {
   return (
-    <div className=" text-white leading-[2.2rem] text-sm font-light py-2">
-      <div className="flex justify-center items-center gap-30">
+    <div className=" text-white leading-[2.2rem] text-sm font-light py-2 z-10">
+      <div className="flex justify-center items-center gap-36">
         <div>
           <div className="flex justify-between items-center">
             <FacebookOutlinedIcon />
@@ -41,7 +41,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="ml-[18%] bg-primary">
+      <div className="ml-[18.5%]">
         <div>
           <div>
             <p className="border-1 inline-block px-1">Service Code</p>

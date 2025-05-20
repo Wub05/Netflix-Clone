@@ -10,7 +10,7 @@ const Banner = () => {
       try {
         //await... pauses the execution until the promise(axios.get()) resolves
         const request = await axios.get(requests.fetchNetflixOriginals);
-        console.log(request);
+
         setMovie(
           request.data.results[
             Math.floor(Math.random() * request.data.results.length)
@@ -26,31 +26,25 @@ const Banner = () => {
   };
   return (
     <div
-      className="bg-cover bg-center bg-no-repeat min-h-[40vh]"
+      className="bg-cover bg-center bg-no-repeat min-h-[40vh] max-w-full"
       style={{
         //url to access movie images(like,posters/backdrops)
         backgroundImage: `url(https://image.tmdb.org/t/p/original${movie?.backdrop_path})`,
       }}
     >
-      <div className="pt-[35vh] ml-[3vw]">
+      <div className="pt-[35vh] pb-[10vh] ml-[3vw]">
         <h1 className="text-5xl text-white text-bold">
           {movie?.title || movie?.name || movie?.original_name}
         </h1>
-        <div className="flex justify-start items-center gap-5 py-5 ">
+        <div className="flex justify-start items-center gap-14 py-5 ml-5">
           <Button btn_title="Play" />
           <Button btn_title="My List" />
         </div>
-        <h1 className="max-w-[35vw] text-white text-sm bg-[#9592928c] rounded-lg p-2 mb-4">
+        <h1 className="max-w-[35vw] text-white text-sm bg-[#9592928c] rounded-lg   p-2 mb-4">
           {truncate(movie?.overview, 150)}
         </h1>
       </div>
-      <div
-        className="h-[20vh]"
-        style={{
-          backgroundImage:
-            "linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.91),#111)",
-        }}
-      />
+      <div className="h-[10vh] bg-fadeOut" />
     </div>
   );
 };
