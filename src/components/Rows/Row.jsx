@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "../../utils/axios";
 import movieTrailer from "movie-trailer";
 import Youtube from "react-youtube";
-import { Height } from "@mui/icons-material";
+
 const Row = ({ title, fetchUrl, isLargeRow }) => {
   const base_url = "https://image.tmdb.org/t/p/original"; //base url for posters and banners
 
@@ -38,7 +38,7 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
           }
         );
   };
-  //option youtube property
+  //options for youtube property
   const opts = {
     height: "390",
     width: "100%",

@@ -21,9 +21,11 @@ const Banner = () => {
       }
     })(); //()-> call or invoke the function automatically
   }, []);
+  //trunctate function
   const truncate = (str, n) => {
     return str?.length > n ? str.substr(0, n - 1) + "..." : str;
   };
+
   return (
     <div
       className="bg-cover bg-center bg-no-repeat min-h-[40vh] max-w-full"
