@@ -38,6 +38,7 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
           }
         );
   };
+  //option youtube property
   const opts = {
     height: "390",
     width: "100%",
