@@ -11,10 +11,6 @@ export default {
         1.08: "1.08",
         1.09: "1.09",
       },
-      backgroundImage: {
-        fadeOut:
-          "linear-gradient(180deg, transparent, rgb(37, 37, 37, 0.91),#111)",
-      },
     },
   },
   plugins: [],
